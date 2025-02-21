@@ -4,7 +4,7 @@
       <h1 class="text-4xl font-bold mb-6 text-blue-700">🌤 Weather App</h1>
       <div class="flex gap-3">
         <input v-model="city" placeholder="Enter city name" class="p-2 border rounded-[12px] w-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-white" />
-        <button @click="fetchWeather" class=" text-white bg-blue-700 px-2 py-3 border rounded-[12px] font-semibold hover:bg-gray-200 transition-all">Search</button>
+        <button @click="fetchWeather" class=" text-white bg-blue-700 px-2 py-3 border rounded-[12px] font-semibold transition-all">Search</button>
       </div>
       <LoaderSpinner v-if="loading" />
       <div v-if="error" class="mt-4 text-red-300 font-semibold">{{ error }}</div>
